@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Navigating the Rocky Road</string>
+
+    <string name="tuam">Tuam</string>
+    <string name="mullingar">Mullingar</string>
+    <string name="dublin">Dublin</string>
+    <string name="liverpool">Liverpool</string>
+
+</resources>

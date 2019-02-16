@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/tuamFragment">
+
+    <fragment
+            android:id="@+id/tuamFragment"
+            android:name="ie.redstar.navigating.TuamFragment"
+            android:label="@string/tuam"
+            tools:layout="@layout/fragment_tuam">
+        <action
+                android:id="@+id/action_tuamFragment_to_mullingarFragment1"
+                app:destination="@id/mullingarFragment"
+                />
+    </fragment>
+    <fragment
+            android:id="@+id/mullingarFragment"
+            android:name="ie.redstar.navigating.MullingarFragment"
+            android:label="@string/mullingar"
+            tools:layout="@layout/fragment_mullingar">
+        <action
+                android:id="@+id/action_mullingarFragment_to_dublinFragment"
+                app:destination="@id/dublinFragment"
+                />
+    </fragment>
+    <fragment
+            android:id="@+id/dublinFragment"
+            android:name="ie.redstar.navigating.DublinFragment"
+            android:label="@string/dublin"
+            tools:layout="@layout/fragment_dublin">
+        <action
+                android:id="@+id/action_dublinFragment_to_liverpoolFragment"
+                app:destination="@id/liverpoolFragment"
+                />
+    </fragment>
+    <fragment
+            android:id="@+id/liverpoolFragment"
+            android:name="ie.redstar.navigating.LiverpoolFragment"
+            android:label="@string/liverpool"
+            tools:layout="@layout/fragment_liverpool"/>
+</navigation>
